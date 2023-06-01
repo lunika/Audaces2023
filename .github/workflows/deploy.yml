@@ -14,6 +14,9 @@ jobs:
         run:  npm i -g @slidev/cli
       - name: Build
         run: slidev build
+      - name: Keep CNAME
+        run:
+          echo "audaces2023.raynaud.io" > dist/CNAME
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:

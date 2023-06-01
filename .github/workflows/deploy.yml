@@ -13,7 +13,7 @@ jobs:
       - name: Install slidev
         run:  npm i -g @slidev/cli
       - name: Build
-        run: slidev build
+        run: slidev build --dark
       - name: Keep CNAME
         run:
           echo "audaces2023.raynaud.io" > dist/CNAME
